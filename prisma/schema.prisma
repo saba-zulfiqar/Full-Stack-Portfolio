@@ -1,0 +1,85 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model AdminUser {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  name         String   @default("Saba Zulfiqar")
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Profile {
+  id                String   @id @default(cuid())
+  name              String   @default("Saba Zulfiqar")
+  title             String   @default("Full Stack Developer")
+  bio               String
+  email             String   @default("sabazulfiqar926@gmail.com")
+  phone             String   @default("+92 307 5834975")
+  location          String   @default("Pakistan | Open to Remote, Hybrid & Onsite roles")
+  githubUrl         String?
+  linkedinUrl       String?
+  resumeUrl         String   @default("/resume.pdf")
+  yearsExperience   Int      @default(2)
+  projectsCompleted Int      @default(15)
+  availableForWork  Boolean  @default(true)
+  updatedAt         DateTime @updatedAt
+}
+
+model Project {
+  id               String   @id @default(cuid())
+  title            String
+  slug             String   @unique
+  shortDescription String
+  description      String
+  techTags         String   // JSON or comma-separated tags
+  liveUrl          String?
+  githubUrl        String?
+  imageUrl         String   @default("/images/project-placeholder.svg")
+  category         String   @default("Personal") // "Client" | "Personal" | "Work"
+  featured         Boolean  @default(false)
+  published        Boolean  @default(true)
+  order            Int      @default(0)
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model Skill {
+  id        String   @id @default(cuid())
+  name      String
+  category  String   // "Frontend" | "Backend" | "Databases" | "DevOps and Tools" | "Testing" | "Fundamentals"
+  level     Int      @default(90) // 0-100 proficiency
+  icon      String?
+  order     Int      @default(0)
+  createdAt DateTime @default(now())
+}
+
+model TimelineItem {
+  id           String   @id @default(cuid())
+  type         String   // "EXPERIENCE" | "EDUCATION"
+  title        String   // "Full Stack Developer" or "BS Computer Science"
+  organization String   // "Orzeh Technologies" or "Allama Iqbal Open University"
+  period       String   // "2025 - 2026" or "2020 - 2024"
+  description  String
+  current      Boolean  @default(false)
+  order        Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Message {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  subject   String?
+  message   String
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+}

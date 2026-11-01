@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fashionbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#180e29" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="fashion-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#fashionbg)" />
+  <g transform="translate(150, 80)">
+    <!-- Browser window mockup -->
+    <rect width="500" height="290" rx="16" fill="#1e1b4b" stroke="#312e81" stroke-width="2" />
+    <rect width="500" height="40" rx="16" fill="#0f172a" />
+    <circle cx="25" cy="20" r="5" fill="#ef4444" />
+    <circle cx="45" cy="20" r="5" fill="#f59e0b" />
+    <circle cx="65" cy="20" r="5" fill="#10b981" />
+    <rect x="110" y="10" width="280" height="20" rx="10" fill="#312e81" opacity="0.6" />
+    <text x="250" y="24" fill="#a5b4fc" font-family="system-ui" font-size="11" text-anchor="middle">saba-fashion.vercel.app</text>
+
+    <!-- Content: E-Commerce Store UI -->
+    <text x="250" y="85" fill="url(#fashion-accent)" font-family="system-ui, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" letter-spacing="1">SABA FASHION</text>
+    <text x="250" y="110" fill="#cbd5e1" font-family="system-ui" font-size="13" text-anchor="middle">Modern Apparel &amp; Fashion E-Commerce Platform</text>
+    
+    <!-- Product Grid Mockup -->
+    <g transform="translate(45, 135)">
+      <!-- Card 1 -->
+      <rect width="125" height="120" rx="8" fill="#0f172a" stroke="#3730a3" />
+      <rect x="10" y="10" width="105" height="65" rx="6" fill="#312e81" opacity="0.5" />
+      <rect x="15" y="85" width="60" height="8" rx="4" fill="#f472b6" />
+      <rect x="15" y="98" width="40" height="8" rx="4" fill="#94a3b8" />
+      
+      <!-- Card 2 -->
+      <g transform="translate(142, 0)">
+        <rect width="125" height="120" rx="8" fill="#0f172a" stroke="#3730a3" />
+        <rect x="10" y="10" width="105" height="65" rx="6" fill="#312e81" opacity="0.5" />
+        <rect x="15" y="85" width="70" height="8" rx="4" fill="#a78bfa" />
+        <rect x="15" y="98" width="45" height="8" rx="4" fill="#94a3b8" />
+      </g>
+
+      <!-- Card 3 -->
+      <g transform="translate(284, 0)">
+        <rect width="125" height="120" rx="8" fill="#0f172a" stroke="#3730a3" />
+        <rect x="10" y="10" width="105" height="65" rx="6" fill="#312e81" opacity="0.5" />
+        <rect x="15" y="85" width="65" height="8" rx="4" fill="#38bdf8" />
+        <rect x="15" y="98" width="35" height="8" rx="4" fill="#94a3b8" />
+      </g>
+    </g>
+  </g>
+</svg>

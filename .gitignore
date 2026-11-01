@@ -1,0 +1,9 @@
+.env
+.env.local
+.env.*.local
+node_modules
+.next
+build.log
+build_err.txt
+build_out.txt
+public/uploads
