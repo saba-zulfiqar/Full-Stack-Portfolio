@@ -21,6 +21,10 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "www.typeoye.com",
+      },
+      {
+        protocol: "https",
         hostname: "saba-fashion.vercel.app",
       },
     ],

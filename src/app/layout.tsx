@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "PostgreSQL",
     "Remote Developer",
   ],
-  authors: [{ name: "Saba Zulfiqar", url: "https://typeoye.com" }],
+  authors: [{ name: "Saba Zulfiqar", url: "https://www.linkedin.com/in/saba-zulfiqar-015059356/" }],
   openGraph: {
     title: "Saba Zulfiqar | Full Stack Developer",
     description:

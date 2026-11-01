@@ -25,7 +25,7 @@ export const DEFAULT_PROJECTS: ProjectData[] = [
     shortDescription: "Interactive touch typing speed test platform with real-time WPM calculation, accuracy tracking, and responsive layout.",
     description: "TypeOye is a web application designed to help users evaluate and improve their typing speed and precision. Built with a responsive interface, dynamic keystroke analysis, real-time WPM and accuracy counters, and custom test durations.",
     techTags: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
-    liveUrl: "https://typeoye.com",
+    liveUrl: "https://www.typeoye.com",
     githubUrl: null,
     imageUrl: "/images/typeoye.svg",
     category: "Client",

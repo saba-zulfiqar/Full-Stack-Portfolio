@@ -8,7 +8,7 @@ Includes a fully secured `/admin` command center with authentication, real-time 
 
 ## 🚀 Live Demo & Featured Projects
 - **Portfolio:** [https://saba-portfolio.vercel.app](https://saba-portfolio.vercel.app)
-- **TypeOye:** [https://typeoye.com](https://typeoye.com)
+- **TypeOye:** [https://www.typeoye.com](https://www.typeoye.com)
 - **Saba Fashion:** [https://saba-fashion.vercel.app](https://saba-fashion.vercel.app)
 
 ---

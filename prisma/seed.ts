@@ -58,7 +58,7 @@ async function main() {
       shortDescription: "An interactive touch typing speed test platform featuring real-time WPM calculation, accuracy tracking, and responsive UI.",
       description: "TypeOye is a modern web application designed to help users evaluate and sharpen their typing speed and precision. Built with a responsive interface, dynamic keystroke analysis, real-time WPM/accuracy counters, and custom test durations.",
       techTags: JSON.stringify(["Next.js", "TypeScript", "Tailwind CSS", "React", "Web Vitals"]),
-      liveUrl: "https://typeoye.com",
+      liveUrl: "https://www.typeoye.com",
       githubUrl: null,
       imageUrl: "/images/typeoye.svg",
       category: "Client",
